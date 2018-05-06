@@ -236,13 +236,83 @@ basic.forever(() => {
 })
 ```
 ## The Combined And and Not Gate
+The code for the combined And and Not gates:
+```js
+let qrt = 0
+let gate = 0
+input.onButtonPressed(Button.A, () => {
+    if (gate == 0) {
+        gate = 1
+    } else {
+        gate = 0
+    }
+})
+input.onButtonPressed(Button.B, () => {
+    if (qrt == 100) {
+        qrt = 0
+    } else {
+        qrt = 100
+    }
+})
+basic.forever(() => {
+basic.clearScreen()
+while (qrt == 100) {
+    while (gate == 1 && qrt == 100) {
+        if (pins.digitalReadPin(DigitalPin.P1) == 0 && pins.digitalReadPin(DigitalPin.P2) == 0) {
+        pins.digitalWritePin(DigitalPin.P0, 0)
+        basic.showLeds(`
+        . . # . .
+        . # . # .
+        . # . # .
+        . # . # .
+        . . # . .
+        `)
+            } else {
+                pins.digitalWritePin(DigitalPin.P0, 1)
+                basic.showLeds(`
+                . . # . .
+                . # # . .
+                . . # . .
+                . . # . .
+                . # # # .
+                `)
+            }
+        }
+    while (gate == 0 && qrt == 100) {
+        if (pins.digitalReadPin(DigitalPin.P1) == 1 && pins.digitalReadPin(DigitalPin.P2) == 1) {
+        pins.digitalWritePin(DigitalPin.P0, 1)
+        basic.showLeds(`
+        . . # . .
+        . # # . .
+        . . # . .
+        . . # . .
+        . # # # .
+        `)
+            } else {
+                pins.digitalWritePin(DigitalPin.P0, 0)
+                basic.showLeds(`
+                . . # . .
+                . # . # .
+                . # . # .
+                . # . # .
+                . . # . .
+                `)
+            }
+        }
+    }
+})
 
+```
 
+## The Finished Product
+￼![alt text](https://github.com/CodeGuild-co/MicroBlocks/blob/master/IMG_3944.jpeg)
+￼![alt text](https://github.com/CodeGuild-co/MicroBlocks/blob/master/IMG_3945.jpeg)
+￼![alt text](https://github.com/CodeGuild-co/MicroBlocks/blob/master/IMG_3946.jpeg)
 
 Team:
-- Halle Gordon-Jeary: Power Point And Script Writer
-- Orla Brimacombe: Jokes Person innit, Hypeman/Woman, Moral Supporter, Potato Searcher, SpellCheck and Editor.
-- Asma Mansur: Encapsulation Designer
-- Jeevan Dominguez: Project Manager, And Circuit Designer
-- Almaz Ahmad : Lead Programmer
+- Halle Gordon-Jeary
+- Orla Brimacombe
+- Asma Mansur
+- Jeevan Dominguez
+- [Almaz Ahmad](https://github.com/sp1d5r)
 
