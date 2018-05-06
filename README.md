@@ -305,9 +305,9 @@ while (qrt == 100) {
 ```
 
 ## The Finished Product
-￼![alt text](https://github.com/sp1d5r/MicroBlocks/blob/master/IMG_3944.jpeg)
-￼![alt text](https://github.com/sp1d5r/MicroBlocks/blob/master/IMG_3945.jpeg)
-￼![alt text](https://github.com/sp1d5r/MicroBlocks/blob/master/IMG_3946.jpeg)
+￼![alt text](https://github.com/CodeGuild-co/MicroBlocks/blob/master/IMG_3944.jpeg)
+￼![alt text](https://github.com/CodeGuild-co/MicroBlocks/blob/master/IMG_3945.jpeg)
+￼![alt text](https://github.com/CodeGuild-co/MicroBlocks/blob/master/IMG_3946.jpeg)
 
 Team:
 - Halle Gordon-Jeary
